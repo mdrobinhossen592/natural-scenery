@@ -1,0 +1,991 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+#main {
+    width: 1024px;
+    height: 700px;
+    margin: 15px auto 0 auto;
+    position: relative;
+    background: rgb(226 133 71 / 16%);
+    transition: 10s;
+    overflow: hidden;
+}
+.akas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 47%;
+    width: 100%;
+    background: linear-gradient(179.38deg, #4d6eaa -75.24%, #ddd 157.38%);
+    z-index: -999999999999;
+}
+.cad {
+    height: 100px;
+    width: 100px;
+    background: #aaa78b;
+    border-radius: 50%;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate3d(0);
+    transition: 3s;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    /* cursor: pointer; */
+}
+.surzo {
+    height: 100px;
+    width: 100px;
+    background: rgb(226, 133, 71);
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    transform: translate3d(0);
+    transition: 1s;
+    z-index: -1;
+    
+}
+.chad {
+    height: 300px;
+    width: 300px;
+    background: #6a635d;
+    position: absolute;
+    top: -76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(50% 58%, 100% 100%, 0% 100%);
+}
+.ghor {
+    height: 200px;
+    width: 260px;
+    background: #6c7769;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: -1; */
+}
+.duya {
+    width: 283px;
+    height: 20px;
+    background: #6a635d;
+    position: absolute;
+    bottom: -20px;
+    left: -11px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dorja {
+    position: absolute;
+    bottom: 255px;
+    left: 50%;
+    height: 21%;
+    width: 80px;
+    background: beige;
+    transform: translateX(-50%);
+    border: 4px solid #1a1b1a;
+}
+.janalaL {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 56px;
+    left: 20px;
+    background: rgba(247, 247, 128, 0.493);
+    border: 4px solid #1a1b1a;
+}
+.janalaL::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #6a635d;
+    border-right: 2px solid #1a1b1a;
+    transition: 1s;
+}
+.janalaL::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #6a635d;
+    border-left: 2px solid #1a1b1a;
+    transition: 1s;
+}
+#main:hover .ghor .janalaL::before{
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+}
+#main:hover .ghor .janalaL::after{
+    width: 30%;
+    border-radius: 10px 0px 0px 10px;
+}
+.janalaR{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 56px;
+    right: 20px;
+    background: #ddd;
+    border: 4px solid #1a1b1a;
+    background: rgba(247, 247, 128, 0.493);
+}
+.janalaR::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #6a635d;
+    border-right: 2px solid #1a1b1a;
+    transition: 1s;
+}
+.janalaR::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #6a635d;
+    border-left: 2px solid #1a1b1a;
+    transition: 1s;
+}
+#main:hover .ghor .janalaR::before{
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+}
+#main:hover .ghor .janalaR::after{
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+}
+.light {
+    position: absolute;
+    height: 13px;
+    width: 10px;
+    background: yellow;
+    top: 45%;
+    left: 507px;
+    border-radius: 6px;
+    z-index: -1;
+    transition: .5s;
+}
+.out_tar {
+    height: 20px;
+    width: 3px;
+    background: #000;
+    position: absolute;
+    top: 248px;
+    left: 38%;
+    /* z-index: -1; */
+}
+.out_light {
+    height: 13px;
+    width: 12px;
+    background: #ffffff;
+    position: absolute;
+    top: 38%;
+    left: 385px;
+    border-radius: 4px;
+    transition: 2s;
+}
+#main:hover .out_light{
+    background: yellow;
+    border: none;
+    box-shadow: 0px 19px 81px 21px yellow;
+
+}
+.megh1 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    border-radius: 50%;
+}
+.megh2 {
+    height: 130px;
+    width: 179px;
+    background: #ddd;
+    position: absolute;
+    top: -23px;
+    left: 70px;
+    border-radius: 50%;
+}
+.megh3 {
+    height: 131px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 17px;
+    right: -37px;
+    border-radius: 17px 0px 0px 106px;
+    border-radius: 50%;
+}
+.megh4 {
+    height: 120px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    border-radius: 50%;
+}
+.megh5 {
+    height: 117px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    border-radius: 50%;
+}
+.megh6 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: -69px;
+    right: 51px;
+    border-radius: 50%;
+}
+.megh7 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.megh8 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: -9px;
+    right: 113px;
+    border-radius: 50%;
+}
+.megh9 {
+    height: 145px;
+    width: 262px;
+    background: #ddd;
+    position: absolute;
+    top: -29px;
+    right: 177px;
+    border-radius: 50%;
+    box-shadow: -6px -90px 309px 96px #e4945e;
+    transition: 10s;
+    
+}
+.megh10 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 33px;
+    right: 285px;
+    border-radius: 50%;
+}
+.megh11 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: -65px;
+    right: 372px;
+    border-radius: 50%;
+}
+.megh12 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 10px;
+    right: 523px;
+    border-radius: 50%;
+}
+.megh13 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: -31px;
+    right: 458px;
+    border-radius: 50%;
+}
+.megh14 {
+    height: 120px;
+    width: 125px;
+    background: #ddd;
+    position: absolute;
+    top: -16px;
+    left: 399px;
+    border-radius: 50%;
+}
+.megh15 {
+    height: 151px;
+    width: 190px;
+    background: #ddd;
+    position: absolute;
+    top: -75px;
+    left: 238px;
+    border-radius: 50%;
+}
+.megh16 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 16px;
+    left: 351px;
+    border-radius: 50%;
+}
+.megh17 {
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: -42px;
+    left: 195px;
+    border-radius: 50%;
+}
+.megh18{ 
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.megh19 {
+    height: 165px;
+    width: 189px;
+    background: #ddd;
+    position: absolute;
+    top: -37px;
+    left: -15px;
+    border-radius: 50%;
+}
+.megh20{ 
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+/* meght rightToleft */
+.rightToleft{
+    transform: translate(0);
+    transition: 5s;
+    width: 46%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#main:hover .rightToleft{
+    transform: translateX(-110%);
+    background: #000000ab;
+}
+
+.megh3{
+    transform: translate(0);
+    transition: 3s;
+}
+#main:hover .rightToleft .megh3 {
+    position: absolute;
+    left: -73px;
+    top: -26px;
+    height: 215px;
+    width: 223px;
+    transform: translate(-50);
+    z-index: -1;
+}
+
+#main:hover .megh9{
+    box-shadow: none;
+}
+
+
+/* meght rightToleft end */
+
+/* meght leftToright  */
+.leftToright{
+    transform: translate(0);
+    transition: 5s;
+}
+#main:hover .leftToright{
+    transform: translateX(50%);
+    background: #000000ab;
+}
+/* meght leftToright end */
+
+/* alo */
+.alo1 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 80px;
+    left: -4px;
+    transform: rotate(49deg);
+}
+.alo2 {
+    position: absolute;
+    height: 26px;
+    width: 4px;
+    background: #e4945e;
+    top: 89px;
+    left: 5px;
+    transform: rotate(47deg);
+}
+.alo3 {
+    position: absolute;
+    height: 19px;
+    width: 4px;
+    background: #e4945e;
+    top: 100px;
+    left: 21px;
+    transform: rotate(29deg);
+}
+.alo4 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 104px;
+    left: 35px;
+    transform: rotate(19deg);
+}
+.alo5 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 105px;
+    left: 54px;
+    transform: rotate(7deg);
+}
+.alo6 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 101px;
+    left: 73px;
+    transform: rotate(-17deg);
+}
+.alo7 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 93px;
+    left: 87px;
+    transform: rotate(-38deg);
+}
+.alo8 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 79px;
+    left: 101px;
+    transform: rotate(-47deg);
+}
+.alo9 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 68px;
+    left: 105px;
+    transform: rotate(123deg);
+}
+.alo10 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 51px;
+    left: 114px;
+    transform: rotate(106deg);
+}
+.alo11 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 38px;
+    left: 113px;
+    transform: rotate(98deg);
+}
+.alo12 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 19px;
+    left: 114px;
+    transform: rotate(74deg);
+}
+.alo13 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 6px;
+    left: 104px;
+    transform: rotate(61deg);
+}
+.alo14 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: -13px;
+    left: 95px;
+    transform: rotate(55deg);
+}
+.alo15 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: -17px;
+    left: 77px;
+    transform: rotate(40deg);
+}
+.alo16 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: -30px;
+    left: 58px;
+    transform: rotate(14deg);
+}
+.alo17 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: -24px;
+    left: 38px;
+    transform: rotate(177deg);
+}
+.alo18 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: -24px;
+    left: 19px;
+    transform: rotate(150deg);
+}
+.alo19 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: -9px;
+    left: 6px;
+    transform: rotate(138deg);
+}
+.alo20 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 0px;
+    left: -9px;
+    transform: rotate(122deg);
+}
+.alo21 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 20px;
+    left: -13px;
+    transform: rotate(110deg);
+}
+.alo22 {
+    position: absolute;
+    height: 27px;
+    width: 4px;
+    background: #e4945e;
+    top: 34px;
+    left: -19px;
+    transform: rotate(88deg);
+}
+.alo23 {
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #e4945e;
+    top: 53px;
+    left: -15px;
+    transform: rotate(76deg);
+}
+.alo24 {
+    position: absolute;
+    height: 26px;
+    width: 4px;
+    background: #e4945e;
+    top: 65px;
+    left: -15px;
+    transform: rotate(61deg);
+}
+
+.gach {
+    clip-path: polygon(23% 33%, 44% 42%, 39% 30%, 51% 41%, 65% 31%, 58% 42%, 80% 34%, 60% 49%, 65% 100%, 35% 100%, 40% 48%, 31% 41%);
+    height: 324px;
+    width: 190px;
+    background: #012555;
+    position: absolute;
+    top: 38%;
+    left: 8%;
+    z-index: -1;
+}
+.pata {
+    clip-path: polygon(50% 0%, 85% 14%, 99% 49%, 79% 81%, 64% 65%, 36% 65%, 20% 80%, 0 49%, 17% 12%);
+    height: 262px;
+    width: 295px;
+    background: green;
+    position: absolute;
+    top: 32%;
+    left: 3%;
+    background: linear-gradient(186.38deg, #e69a65 -22.24%, green 59.38%);
+    z-index: -1;
+    transition: 10s;
+}
+#main:hover .pata{
+    background: linear-gradient(186.38deg, #d7c8bd -22.24%, green 59.38%)
+}
+
+.gach2 {
+    clip-path: polygon(23% 33%, 44% 42%, 39% 30%, 51% 41%, 65% 31%, 58% 42%, 80% 34%, 60% 49%, 65% 100%, 35% 100%, 40% 48%, 31% 41%);
+    height: 160px;
+    width: 152px;
+    background: #012555;
+    position: absolute;
+    top: 44%;
+    right: 6%;
+    z-index: -11;
+}
+.pata2 {
+    clip-path: polygon(50% 0%, 85% 14%, 99% 49%, 79% 81%, 64% 65%, 36% 65%, 20% 80%, 0 49%, 17% 12%);
+    height: 150px;
+    width: 190px;
+    background: green;
+    position: absolute;
+    top: 39%;
+    right: 4%;
+    background: linear-gradient(186.38deg, #e69a65 -22.24%, green 59.38%);
+    z-index: -1;
+}
+#main:hover .pata2{
+    background: linear-gradient(186.38deg, #d7c8bd -22.24%, green 59.38%)
+}
+.gach3 {
+    clip-path: polygon(23% 33%, 44% 42%, 39% 30%, 51% 41%, 65% 31%, 58% 42%, 80% 34%, 60% 49%, 65% 100%, 35% 100%, 40% 48%, 31% 41%);
+    height: 155px;
+    width: 152px;
+    background: #012555;
+    position: absolute;
+    top: 37%;
+    right: 25%;
+    z-index: -1;
+}
+.pata3 {
+    clip-path: polygon(50% 0%, 85% 14%, 99% 49%, 79% 81%, 64% 65%, 36% 65%, 20% 80%, 0 49%, 17% 12%);
+    height: 150px;
+    width: 190px;
+    background: linear-gradient(202.38deg, #e69a65 -7.24%, green 59.38%);
+    position: absolute;
+    top: 31%;
+    right: 23%;
+    z-index: -1;
+    /* box-shadow: -6px -90px 366px 96px #e4945e; */
+}
+#main:hover .pata3{
+    background: linear-gradient(186.38deg, #d7c8bd -22.24%, green 59.38%)
+}
+.gach4 {
+    clip-path: polygon(23% 33%, 44% 42%, 39% 30%, 51% 41%, 65% 31%, 58% 42%, 80% 34%, 60% 49%, 65% 100%, 35% 100%, 40% 48%, 31% 41%);
+    height: 266px;
+    width: 179px;
+    background: #012555;
+    position: absolute;
+    top: 60%;
+    right: 13%;
+    z-index: -1;
+}
+.pata4 {
+    clip-path: polygon(50% 0%, 85% 14%, 99% 49%, 79% 81%, 64% 65%, 36% 65%, 20% 80%, 0 49%, 17% 12%);
+    height: 200px;
+    width: 239px;
+    background: linear-gradient(202.38deg, #e69a65 -7.24%, green 59.38%);
+    position: absolute;
+    top: 56%;
+    right: 10%;
+    z-index: -1;
+}
+#main:hover .pata4{
+    background: linear-gradient(186.38deg, #d7c8bd -22.24%, green 59.38%)
+}
+
+.pakhi {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transition: 5s;
+    z-index: -111;
+}
+#main:hover .pakhi {
+    transform: translate(30px, 138px);
+}
+#main:hover .pakhi2 {
+    transform: translate(90px, 123px);
+}
+#main:hover .pakhi3 {
+    transform: translate(30px, 138px);
+}
+#main:hover .pakhi4 {
+    transform: translate(90px, 123px);
+}
+
+#main:hover .pakhi5 {
+    transform: translate(192px, 146px);
+}
+#main:hover .pakhi6 {
+    transform: translate(157px, 179px);
+}
+#main:hover .pakhi7 {
+    transform: translate(274px, 360px);
+}
+#main:hover .pakhi8 {
+    transform: translate(293px, 355px);
+}
+.pakhi2 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 17%;
+    left: 2%;
+    transition: 8s;
+    z-index: -111;
+}
+.pakhi3 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    transition: 5s;
+    z-index: -111;
+}
+
+.pakhi4 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 21%;
+    left: 1%;
+    transition: 8s;
+    z-index: -111
+}
+
+.pakhi5 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 20%;
+    left: 62%;
+    transition: 5s;
+    z-index: -111;
+}
+.pakhi6 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 17%;
+    left: 65%;
+    transition: 5s;
+    z-index: -111;
+}
+
+.pakhi7 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    top: 8%;
+    left: 53%;
+    transition: 8s;
+    z-index: -111;
+}
+.pakhi8 {
+    clip-path: polygon(33% 35%, 37% 52%, 41% 60%, 8% 67%, 16% 72%, 48% 71%, 100% 67%, 97% 58%, 85% 62%, 66% 62%, 57% 36%, 54% 60%);
+    height: 50px;
+    width: 50px;
+    background: #000000;
+    position: absolute;
+    top: 11%;
+    left: 47%;
+    transition: 8s;
+    z-index: -111;
+}
+
+
+.jhop {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    height: 68px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+    top: 57%;
+    left: 33%;
+    z-index: -1;
+}
+.jhop2 {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    height: 72px;
+    width: 79px;
+    background-color: green;
+    position: absolute;
+    top: 57%;
+    left: 61%;
+    z-index: -1;
+}
+
+.jhop4 {
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 24%, 75% 100%, 0 100%, 0% 80%, 0% 20%);
+    height: 480px;
+    width: 487px;
+    background-color: green;
+    position: absolute;
+    bottom: -107px;
+    left: -2%;
+    z-index: -33;
+    background: linear-gradient(186.38deg, #e69a65 -22.24%, green 59.38%);
+    transition: 10s;
+}
+#main:hover .jhop4{
+    background: linear-gradient(186.38deg, #d7c8bd -22.24%, green 59.38%);
+}
+.jhop5 {
+    clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 80%, 99% 100%, 24% 100%, 0 24%, 0% 20%);
+    height: 480px;
+    width: 488px;
+    background-color: green;
+    position: absolute;
+    bottom: -107px;
+    right: -2%;
+    z-index: -11111111;
+    background: linear-gradient(186.38deg, #e69a65 -22.24%, green 59.38%);
+    transition: 10s;
+}
+#main:hover .jhop5{
+    background: linear-gradient(186.38deg, #d7c8bd -22.24%, green 59.38%);
+}
+
+/* alo end */
+
+.light::before {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 3px;
+    background: #000;
+    top: -17px;
+    left: 4px;
+}
+#main:hover .light {
+    z-index: 1;
+    box-shadow: 0px 0px 17px 4px yellow;
+    /* background: rgba(255, 255, 0, 0.281); */
+}
+.dorja::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #6a635d;
+    transition: .5s;
+    border-right: 2px solid #1a1b1a;
+
+}
+.dorja::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #6a635d;
+    transition: .5s;
+    border-left: 2px solid #1a1b1a;
+}
+#main:hover .dorja::before {
+    width: 30%;
+    border-radius: 0 50px 50px 0;
+    
+}
+#main:hover .dorja::after {
+    width: 30%;
+    border-radius: 50px 0 0 50px;
+}
+#main:hover .dorja{
+    background: rgba(247, 247, 128, 0.493);
+}
+
+#main:hover .surzo {
+    transform: translate3d(-255px, 115px, 20px);
+    visibility: hidden;
+    opacity: 0;
+}
+#main:hover .cad {
+    transform: translate3d(255px, -111px, 20px);
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0px 0px 401px 80px #d7c8bd;
+}
+#main:hover {
+    background: #000000ab;
+}
